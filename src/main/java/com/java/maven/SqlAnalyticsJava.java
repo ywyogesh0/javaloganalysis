@@ -32,6 +32,12 @@ public class SqlAnalyticsJava {
 		sqlAnalytics.logAnalytics2();
 		sqlAnalytics.logAnalytics3();
 
+		sqlAnalytics.stop();
+
+	}
+
+	private void stop() {
+		spark.stop();
 	}
 
 	private void initJavaSparkContextParams() {
